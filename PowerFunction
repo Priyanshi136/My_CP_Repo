@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int power(int x, int y) {
+   int i,power=1;
+   if(y == 0)
+   return 1;
+   for(i=1;i<=y;i++)
+   power=power*x;
+   return power;
+}
