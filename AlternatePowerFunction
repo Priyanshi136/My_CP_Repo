@@ -1,0 +1,12 @@
+int pow(int x, int y, int p){
+    x %= p;
+    int z = 1;
+    while(y){
+        if(y%2){
+            z = (z*x)%p;
+        }
+        y /= 2;
+        x = (x*x)%p;
+    }
+    return z;
+}
